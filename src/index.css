@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://unpkg.com/leaflet@1.7.1/dist/leaflet.css');
+/* Fondo General de la Página */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: #f0f4f8; /* Fondo claro para todo */
+  color: #333;
+}
+
+/* Fondo del Login */
+.bg-gradient-to-r {
+  background: linear-gradient(45deg, #1b2d3f, #465b5b);  /* Fondo con gradiente azul */
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+}
+
+/* Mapa - Ajustes de altura y ancho */
+.map-container {
+  height: 100%;   /* Asegura que el mapa ocupe todo el espacio disponible */
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .map-container {
+    height: 300px;  /* Disminuye la altura en pantallas pequeñas */
+  }
+}
+
+@media (min-width: 768px) {
+  .map-container {
+    height: 400px;  /* Altura ideal en pantallas grandes */
+  }
+}
+
+/* Aseguramos que los componentes tengan un buen espaciado */
+.container {
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #087efc;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar ul li {
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.navbar ul li:hover {
+  color: #ffd700; /* Cambiar a un color dorado */
+}
+
+/* Sección de Bienvenida */
+.welcome-section {
+  background: linear-gradient(to right, #007bff, #00bfff); /* Degradado azul */
+  padding: 60px 20px;
+  color: white;
+}
+
+.welcome-section h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.welcome-section p {
+  font-size: 1.25rem;
+  margin-top: 10px;
+}
+
+/* Estilo de los botones */
+button {
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #0056b3;
+}
+
+/* Ajuste de la imagen de fondo en la página principal */
+.bg-cover {
+  background: url('https://example.com/your-image.jpg') center/cover no-repeat; /* Imagen personalizada */
+  height: 100%;
+  background-size: cover;
+}
+
+/* Flexbox para centrar todo en la pantalla */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.opacity-90 {
+  opacity: 0.9;
+}
+/* Ajuste del mapa pequeño */
+.map-container-wrapper {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Asegura que el mapa se ajuste correctamente */
+.map-container {
+  height: 250px;  /* Altura fija del mapa */
+  width: 100%;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .map-container {
+    height: 200px;  /* Ajuste de la altura en pantallas pequeñas */
+  }
+}
+/* Estilo para el contenedor del mapa */
+.map-container-wrapper {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 350px; /* Tamaño máximo del mapa */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Estilo del mapa */
+.map-container {
+  height: 250px;  /* Mapa pequeño */
+  width: 100%;
+}
+
+/* Ajuste de la altura del mapa para pantallas pequeñas */
+@media (max-width: 768px) {
+  .map-container {
+    height: 200px;  /* Disminuir la altura en pantallas pequeñas */
+  }
+}

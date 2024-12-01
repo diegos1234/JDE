@@ -1,0 +1,81 @@
+/* Fondo General */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: #f0f4f8; /* Fondo claro para todo */
+  color: #333;
+}
+
+/* Fondo de la página principal con la imagen de fondo */
+.main-container {
+  background-image: url('https://www.example.com/tu-imagen-de-fondo.jpg'); /* Reemplaza con la URL de tu imagen */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Mapa - Ajustes de altura y ancho */
+.map-container {
+  height: 100%;   /* Asegura que el mapa ocupe todo el espacio disponible */
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .map-container {
+    height: 300px;  /* Disminuye la altura en pantallas pequeñas */
+  }
+}
+
+@media (min-width: 768px) {
+  .map-container {
+    height: 400px;  /* Altura ideal en pantallas grandes */
+  }
+}
+
+/* Aseguramos que los componentes tengan un buen espaciado */
+.container {
+  padding: 20px;
+}
+
+/* Estilos para las rutas */
+.routes-container {
+  background-color: rgba(91, 89, 89, 0.8); /* Fondo semitransparente */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.route-card {
+  background-color: rgb(75, 73, 73);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar */
+.navbar {
+  background-color: #087efc;
+  color: rgb(60, 59, 59);
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar ul li {
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: rgb(51, 49, 49);
+}
+
+.navbar ul li:hover {
+  color: #ffd700;
+}
+
+
